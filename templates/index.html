@@ -2,13 +2,13 @@
 <div class="container">
   <div class="row">
     {% for card in cards %}
-    <div class="col">
+    <div class="col-sm-12 col-md-6 col-lg-4">
       <div class="card">
         <img src="{{ card[3] }}" class="card-img-top" alt=" ">
         <div class="card-body">
           <h5 class="card-title">{{ card[0] }}</h5>
           <p class="card-text">{{ card[1] }}</p>
-          <a href="{{ card[2] }}" class="btn btn-primary">Go somewhere</a>
+          <a href="{{ card[2] }}" class="btn btn-primary">Dive in</a>
       </div>
     </div>
   </div>
