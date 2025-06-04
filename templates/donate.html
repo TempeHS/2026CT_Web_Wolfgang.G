@@ -1,0 +1,19 @@
+{% extends 'layout.html' %} {% block content %}
+<head>
+    <title>Donate</title>
+</head>
+<body>
+    <h1>Donate</h1>
+    {% if thank_you %}
+        <p>Thank you, {{ name }}! Your donation of ${{ amount }} is appreciated.</p>
+    {% else %}
+        <form method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required><br>
+            <label for="amount">Amount ($):</label>
+            <input type="number" name="amount" min="1" required><br>
+            <button type="submit">Donate</button>
+        </form>
+    {% endif %}
+</body>
+{% endblock %}
