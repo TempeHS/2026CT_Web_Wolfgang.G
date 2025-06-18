@@ -14,8 +14,7 @@ def index():
                 ("What is Carcinization", "What actually is Carcinization?", "whatis.html", "static/images/logo.png"),
                 ("What causes Carcinization", "Why is everything evolving into a crab exactly", "whatcauses.html", "static/images/logo.png"),
                 ("Who coined the phrase Carcinization", "Who discovered it?", "who.html", "static/images/logo.png"),
-                ("Will humans evolve into crabs", "And how soon will they?", "will.html", "static/images/logo.png"),
-                ("Why should I care", "What affect does this even have on humanity", "why.html", "static/images/logo.png"),
+             
         ) 
         return render_template("index.html", cards=card_data), 200
 
