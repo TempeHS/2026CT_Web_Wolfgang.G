@@ -2,7 +2,7 @@
 function toggleTheme() {
   const body = document.getElementById('theme');
   const cards = document.querySelectorAll('.card'); 
-  const slider = document.getElementById('carousel'); 
+  const slider = document.getElementById('carousel slide'); 
   const sliderItems = document.querySelectorAll('.carousel-item'); 
   const navbar = document.getElementById('navbar'); 
 
