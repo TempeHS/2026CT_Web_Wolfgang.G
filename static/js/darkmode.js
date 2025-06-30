@@ -5,6 +5,7 @@ function toggleTheme() {
   const slider = document.getElementById('carousel slide'); 
   const sliderItems = document.querySelectorAll('.carousel-item'); 
   const navbar = document.getElementById('navbar'); 
+  const dropdownMenu = document.getElementById('dropdownMenu');
 
   if (body.classList.contains('bg-light')) {
   
@@ -30,6 +31,9 @@ function toggleTheme() {
       navbar.classList.add('navbar-dark', 'bg-dark');
     }
 
+    if (dropdownMenu) {
+      dropdownMenu.classList.add('dropdown-menu-dark');
+    }
     
     localStorage.setItem('theme', 'dark');
   } else {
@@ -56,7 +60,11 @@ function toggleTheme() {
       navbar.classList.add('navbar-light', 'bg-light');
     }
 
- 
+
+    if (dropdownMenu) {
+      dropdownMenu.classList.remove('dropdown-menu-dark');
+    }
+
     localStorage.setItem('theme', 'light');
   }
 }

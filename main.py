@@ -10,10 +10,10 @@ app = Flask(__name__)
 @app.route('/')
 def index():
         card_data = (
-                ("Contact us", "Contact information and location", "contact.html", "static/images/logo.png"),
-                ("What is Carcinization", "What actually is Carcinization?", "whatis.html", "static/images/logo.png"),
-                ("What causes Carcinization", "Why is everything evolving into a crab exactly", "whatcauses.html", "static/images/logo.png"),
-                ("Who coined the phrase Carcinization", "Who discovered it?", "who.html", "static/images/logo.png"),
+                ("Contact us", "Contact information and location", "contact.html", "static/images/contact.png"),
+                ("What is Carcinization", "What actually is Carcinization?", "whatis.html", "static/images/whatis.png"),
+                ("What causes Carcinization", "Why is everything evolving into a crab exactly", "whatcauses.html", "static/images/whatcauses.png"),
+                ("Who coined the phrase Carcinization", "Who discovered it?", "who.html", "static/images/who.png"),
              
         ) 
         return render_template("index.html", cards=card_data), 200

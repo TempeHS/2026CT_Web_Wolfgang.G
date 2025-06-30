@@ -1,8 +1,5 @@
 {% extends 'layout.html' %} {% block content %}
-<head>
-    <title>Donate</title>
-</head>
-<body>
+<div class="container mt-4">
     <h1>Donate</h1>
     {% if thank_you %}
         <p>Thank you, {{ name }}! Your donation of ${{ amount }} is appreciated.</p>
@@ -15,5 +12,5 @@
             <button type="submit">Donate</button>
         </form>
     {% endif %}
-</body>
+</div>
 {% endblock %}
